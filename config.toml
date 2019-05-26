@@ -1,3 +1,52 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Roman - Blog"
+baseurl = "/"
+languageCode = "pl-pl"
+theme = "hello-friend"
+paginate = 5
+DefaultContentLanguage = "pl"
+
+publishDir = "docs"
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # Show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.pl]
+    title = "Roman - Blog"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Autor:"
+    readMore = "Czytaj dalej"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Nowsze wpisy"
+    olderPosts = "Starsze wpisy"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.pl.params.logo]
+      logoText = "Roman - Blog"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.pl.menu]
+      [[languages.pl.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.pl.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
